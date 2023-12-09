@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 1.5rem;
+    font-family: var(--font-geist-mono);
+    background-color: var(--c-dark);
+}
+
+:root {
+    --c-green-light: #99D8AD;
+    --c-green: #30C960;
+    --c-purple-light: #C582D6;
+    --c-purple-dark: #744C7E;
+    --c-dark: #170F19;
+}
+
+::selection {
+    color: var(--c-dark);
+    background-color: var(--c-green-light);
+}
+  
+
+h1 {
+    color: var(--c-purple-light);
+}
+
+p {
+    color: var(--c-green);
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.15rem 0.35rem;
+    text-decoration: none;
+    color: var(--c-green-light);
+    background-color: var(--c-purple-dark);
+}
+
+a:hover {
+    color: var(--c-purple-dark);
+    background-color: var(--c-green-light);
+}
+

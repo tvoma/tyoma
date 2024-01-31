@@ -2,6 +2,7 @@
 
 import ParticleImage, { forces } from "react-particle-image"
 import styles from './styles.module.css'
+import { useEffect, useState } from "react"
 
 const options = {
     filter: ({ x, y, image }) => {
@@ -22,11 +23,18 @@ const options = {
 const motionForce = (x, y) => forces.disturbance(x, y, 20)
 
 function MeParticle() {
+    const [canvasHeight, setCanvasHeight] = useState(800)
+
+    useEffect(() => {
+        if (window)
+            setCanvasHeight(window.innerHeight)
+    }, [])
+
     return (
         <div className={ styles.container }>
             <ParticleImage
                 src='/me.png'
-                height={ window.innerHeight }
+                height={ canvasHeight }
                 width={ 550 }
                 maxParticles={ 4500 } 
                 scale={ 0.55 } 

@@ -7,13 +7,13 @@ import { useEffect, useState } from "react"
 const options = {
     filter: ({ x, y, image }) => {
         const pixel = image.get(x, y)
-        return pixel.b > 100
+        return pixel.b > 140 && pixel.r > 120
     },
     radius: () => Math.random() * 1.5 + 0.5,
     color: ({ x, y, image }) => {
         const pixel = image.get(x, y)
 
-        if (pixel.b < 180)
+        if (pixel.r < 195)
             return '#744C7E'
 
         return '#C582D6'
@@ -33,11 +33,11 @@ function MeParticle() {
     return (
         <div className={ styles.container }>
             <ParticleImage
-                src='/me.png'
+                src='/me-3.png'
                 height={ canvasHeight }
                 width={ 550 }
-                maxParticles={ 4500 } 
-                scale={ 0.55 } 
+                maxParticles={ 5000 } 
+                scale={ 0.25 } 
                 entropy={ 20 } 
                 mouseMoveForce={ motionForce }
                 backgroundColor="#170F19"

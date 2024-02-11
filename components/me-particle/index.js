@@ -33,7 +33,7 @@ function MeParticle() {
     return (
         <div className={ styles.container }>
             <ParticleImage
-                src='/me-3.png'
+                src='/me.png'
                 height={ canvasHeight }
                 width={ 550 }
                 maxParticles={ 5000 } 

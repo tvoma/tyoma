@@ -1,8 +1,9 @@
 'use client'
 
-import ParticleImage, { forces } from "react-particle-image"
-import styles from './styles.module.css'
 import { useEffect, useState } from "react"
+import ParticleImage, { forces } from "react-particle-image"
+import useDeviceHelper from "@/lib/hooks/use-device-helper"
+import styles from './styles.module.css'
 
 const options = {
     filter: ({ x, y, image }) => {
@@ -24,6 +25,7 @@ const motionForce = (x, y) => forces.disturbance(x, y, 20)
 
 function MeParticle() {
     const [canvasHeight, setCanvasHeight] = useState(800)
+    const { isSmallDevice } = useDeviceHelper()
 
     useEffect(() => {
         if (window)
@@ -35,9 +37,9 @@ function MeParticle() {
             <ParticleImage
                 src='/me.png'
                 height={ canvasHeight }
-                width={ 550 }
-                maxParticles={ 5000 } 
-                scale={ 0.25 } 
+                width={ 500 }
+                maxParticles={ 6000 }
+                scale={ isSmallDevice ? 0.55 : 0.7 } 
                 entropy={ 20 } 
                 mouseMoveForce={ motionForce }
                 backgroundColor="#170F19"

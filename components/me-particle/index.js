@@ -38,7 +38,7 @@ function MeParticle() {
                 src='/me.png'
                 height={ canvasHeight }
                 width={ 500 }
-                maxParticles={ 6000 }
+                maxParticles={ 4000 }
                 scale={ isSmallDevice ? 0.55 : 0.7 } 
                 entropy={ 20 } 
                 mouseMoveForce={ motionForce }

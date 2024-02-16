@@ -1,14 +1,41 @@
 .container {
     display: inline-block;
     position: relative;
-    padding: 0 1.5rem;
+    padding: 2rem 1.5rem;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
 
+.gps {
+    font-weight: bold;
+    font-size: 12px;
+}
+
 @media screen and (min-width: 900px) {
     .container {
+        margin: 0 0 0 1.5rem;
+        width: calc(100% - 450px);
+        border-left: 1px solid var(--c-purple-dark);
         background-color: transparent;
+    }
+
+    .container::before,
+    .container::after {
+        content: '';
+        position: absolute;
+        left: -1.5rem;
+        height: 1px;
+        width: 100%;
+        background-color: var(--c-purple-dark);
+        background: linear-gradient(90deg, var(--c-purple-dark) 35%, var(--c-dark) 100%)
+    }
+
+    .container::before {
+        top: 1.5rem;
+    }
+
+    .container::after {
+        bottom: 1.5rem;
     }
 }

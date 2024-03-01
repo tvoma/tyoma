@@ -3,7 +3,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata = {
-  	title: 'Tyoma Portfolio',
+  	title: 'Tyoma\'s Portfolio',
   	description: 'French web developer'
 }
 

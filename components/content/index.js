@@ -6,7 +6,7 @@ function Content() {
         <div className={ styles.container }>
             <p className={ styles.gps }>48°33&rsquo;14&rdquo;N 0°25&rsquo;22&rdquo;E</p>
             <h1>developer.js</h1>
-            <p>Votre futur développeur favoris.</p>
+            <p>Votre futur développeur favori.</p>
             <a target="_blank" href="https://github.com/tvoma">
                 <IconBrandGithub /> <i>tvoma</i>
             </a>

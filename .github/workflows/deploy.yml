@@ -31,7 +31,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
+          ARGS: '--rsync-path="sudo rsync" -rlgoDzvc -i --delete'
           EXCLUDE: '.htaccess'
           SOURCE: "/out"
           TARGET: ${{ secrets.REMOTE_TARGET }}

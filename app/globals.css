@@ -49,3 +49,7 @@ a:hover {
     background-color: var(--c-green-light);
 }
 
+.text-light {
+    color: var(--c-green-light);
+}
+

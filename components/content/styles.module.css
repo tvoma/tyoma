@@ -13,6 +13,15 @@
     font-size: 12px;
 }
 
+.callToAction {
+    display: flex;
+    align-items: center;
+}
+
+.callToAction a {
+    margin-left: 0.25rem;
+}
+
 @media screen and (min-width: 900px) {
     .container {
         margin: 0 0 0 1.5rem;

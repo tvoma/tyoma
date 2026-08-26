@@ -9,16 +9,19 @@ function Content() {
             <p></p>
             <p>&gt; Développeur fullstack Javascript &bull; Votre futur développeur favori.</p>
             <p className='text-light'>J&apos;interviens sur des applications web, de l&apos;interface à l&apos;API, avec une attention particulière portée à la logique métier de chaque projet.</p>
-            <p></p>
-            <a target="_blank" href="https://github.com/tvoma">
-                <IconBrandGithub /> <i>Github</i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/tvoma/">
-                <IconBrandLinkedin /> <i>LinkedIn</i>
-            </a>
-            <p className={ styles.callToAction }>Un projet ? Parlons-en !
+            <p className={ styles.callToAction }>
+                <span>Un projet ? Parlons en !</span>
                 <a href="mailto:hello@tyoma.co">
                     <IconAt /> <i>hello@tyoma.co</i>
+                </a>
+            </p>
+            <p>Retrouvez-moi sur :</p>
+            <p className={ styles.socials }>
+                <a target="_blank" href="https://github.com/tvoma">
+                    <IconBrandGithub /> <i>Github</i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/tvoma/">
+                    <IconBrandLinkedin /> <i>LinkedIn</i>
                 </a>
             </p>
         </div>

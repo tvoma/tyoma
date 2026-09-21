@@ -23,33 +23,18 @@ body {
     color: var(--c-dark);
     background-color: var(--c-green-light);
 }
-  
 
 h1 {
-    font-size: 2.5rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    color: var(--c-purple-light);
+}
+
+h2 {
     color: var(--c-purple-light);
 }
 
 p {
     color: var(--c-green);
-}
-
-a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.15rem 0.35rem;
-    text-decoration: none;
-    color: var(--c-green-light);
-    background-color: var(--c-purple-dark);
-}
-
-a:hover {
-    color: var(--c-purple-dark);
-    background-color: var(--c-green-light);
-}
-
-.text-light {
-    color: var(--c-green-light);
 }
 

@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px dashed var(--c-purple-dark);
+    transition-duration: 0.2s;
+}
+
+.card:hover {
+    border-color: var(--c-green-light);
+}
+
+.card h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.6rem;
+}
+
+.description {
+    color: var(--c-green-light);
+}
+
+.period {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-style: italic;
+    color: var(--c-purple-light);
+}

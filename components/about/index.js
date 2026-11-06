@@ -13,7 +13,6 @@ export default function About() {
                     picked up <em>PHP</em> as my first real language, then kept learning through more formal studies, 
                     eventually landing on the <em>JavaScript</em> ecosystem. I&apos;ve been freelancing since 2021.
                 </p>
-                <p>I&apos;m available for freelance work, remote, ready to start quickly.</p>
             </div>
             <CallToAction />
         </div>

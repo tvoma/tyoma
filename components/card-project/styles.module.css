@@ -2,15 +2,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    margin-bottom: 2rem;
     text-decoration: none;
-    border: 1px dashed var(--c-purple-dark);
     transition-duration: 0.2s;
-}
-
-.card:hover {
-    border-color: var(--c-green-light);
+    border-bottom: 1px dashed var(--c-purple-dark);
 }
 
 .card h2 {
@@ -28,12 +23,32 @@
 
 .period {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0;
+    right: 0;
     font-style: italic;
     color: var(--c-purple-light);
 }
 
 .technologies {
     font-style: italic;
+}
+
+.card a {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--c-purple-light);
+    border: 1px dashed var(--c-purple-dark);
+    border-bottom: none;
+    transition-duration: 0.2s;
+}
+
+.card a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card a span {
+    margin-right: 0.5rem;
 }

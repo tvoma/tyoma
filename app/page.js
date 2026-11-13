@@ -10,7 +10,7 @@ export default function Home() {
             <Wrapper>
                 <Header />
                 <Jumbotron title='developer.js'>
-                    <p>&gt; Fullstack JavaScript developer</p>
+                    <p>&gt; Fullstack Software Engineer</p>
                     <p>&gt; status : open to new missions</p>
                 </Jumbotron>
                 <About />

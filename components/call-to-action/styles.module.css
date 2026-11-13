@@ -1,7 +1,12 @@
+.actions {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
 .callToAction {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
     position: relative;
     padding: 1rem;
     text-decoration: none;

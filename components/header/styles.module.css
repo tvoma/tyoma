@@ -29,6 +29,10 @@
     background-color: transparent;
 }
 
+.links a:not(:last-child) i {
+    display: none;
+}
+
 .links a:after {
     content: '';
     display: block;
@@ -53,6 +57,12 @@
     border-color: var(--c-green-light);
 }
 
+@media screen and (min-width: 500px) {
+    .links a:not(:last-child) i {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 750px) {
     .header {
         flex-direction: row;
@@ -73,5 +83,4 @@
         flex-direction: row;
         align-items: center;
     }
-
 }
